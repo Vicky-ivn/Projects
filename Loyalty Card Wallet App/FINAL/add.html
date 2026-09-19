@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Kartio</title>
+        <!DOCTYPE html>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="viki_style.css">
+    </head>
+    <body>
+        <header class = "header">
+            <h1 class = "title" onclick="window.location.href = 'homepage.html'">Kartio</h1>
+        </header>
+        <main>
+            <section class = "section" id="add_card">
+                <p class="subtitle" id="add_card_text">Add New Card</p>
+                <p class="subtitle">Card Name</p>
+                <input type="text" id="cardName" placeholder="Enter card name">
+                <p class="subtitle">Card Number</p>
+                <input type="text" id="cardNumber" placeholder="Enter card number">
+                <button class="adding-card-btn">Add Card</button>
+            </section>
+        </main>
+        <footer class = "footer">
+            <button class="home_btn" onclick=" window.location.href = 'homepage.html'">Home</button>
+            <button class="your_account_btn">Settings</button>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+        <script src="viki_script.js"></script>
+        </body>
+</html>

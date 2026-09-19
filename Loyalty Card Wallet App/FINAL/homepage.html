@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Kartio</title>
+        <!DOCTYPE html>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="viki_style.css">
+    </head>
+    <body>
+        <header class = "header">
+            <h1 class = "title" onclick="window.location.href = 'homepage.html'">Kartio</h1>
+            <div class = "add">
+            <button id = "plusBtn" onclick=" window.location.href = 'add.html'">+</button>
+            </div>
+        </header>
+        <main id="main">
+            <section class = "section" id="homepage">
+                <section class = "section" id="welcome-section"></section>
+                <p class = "subtitle">Your Loyalty Cards</p>
+                <p id="noCards">No cards yet</p>
+                <div id="cardsContainer"></div>
+            </section>
+            <section class="section" id = "cardDetails" style = "display:none;"></section>
+            <button class="adding-card-btn" style="display:none">Add Card</button>
+            <section class="section" id="deleteCardQuestion" style="display:none;">
+                <h1 class = "deletetext">Delete Card</h1>
+                <p class=""deletetext>Are you sure you want to delete this card?</p>
+                <div class="deletebtndiv">
+                    <button class="deletebtn" onclick="deleteCard()" id="confirmDeleteBtn">Yes</button>
+                    <button class="deletebtn" onclick="document.getElementById('deleteCardQuestion').style.display = 'none';" id="cancelDeleteBtn">No</button>
+                </div>
+            </section>
+        </main>
+        <footer class = "footer">
+            <button class="home_btn" onclick=" window.location.href = 'homepage.html'">Home</button>
+            <button class="your_account_btn" onclick="window.location.href='settings.html'">Settings</button>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+        <script src="viki_script.js"></script>
+    </body>
+</html>

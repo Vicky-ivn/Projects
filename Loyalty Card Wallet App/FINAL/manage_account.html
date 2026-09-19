@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Account</title>
+    <link rel="stylesheet" href="rosen_style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Account</h1>
+    </header>
+
+    <main>
+        <section>
+            <h6>Display Name</h6>
+            <input id="usernameEnter" placeholder="Username">
+
+            <h6>Email</h6>
+            <input id="emailEnter" placeholder="user@gmail.com">
+
+            <h6>Phone</h6>
+            <input placeholder="+359 000 000 000" value="+359 000 000 000">
+
+            <table>
+                <tr>
+                    <td><button onclick="manageAcc();">Save Changes</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+ <footer class="footer">
+        <button class="home_b" onclick=" window.location.href = 'homepage.html'">Home</button>
+        <button class="settings_b" onclick="window.location.href='settings.html'">Settings</button>
+    </footer>
+    <script src="rosen_script.js"></script>
+</body>
+</html>

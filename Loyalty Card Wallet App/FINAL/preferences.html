@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+    <link rel="stylesheet" href="rosen_style.css">
+</head>
+<body>
+    <header>
+        <h1>Preferences</h1>
+    </header>
+
+    <main>
+        <section class="preferences-section">
+            <p>Choose how you want your account to behave.</p>
+
+            <div class="preference-row">
+                <h6>Notifications</h6>
+                <button id="notifBtn" class="preference-action">Turn on / off</button>
+            </div>
+
+            <div class="preference-row">
+                <label for="currencySelect">Currency</label>
+                <select id="currencySelect">
+                    <option value="">Select Currency</option>
+                    <option value="BGN">BGN</option>
+                    <option value="Euro">Euro</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AU">AU</option>
+                    <option value="CHF">CHF</option>
+                    <option value="RSD">RSD</option>
+                </select>
+                <button class="preference-action" onclick="selectCurrency()">Save</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <button class="home_b" onclick="window.location.href='homepage.html'">Home</button>
+        <button class="settings_b" onclick="window.location.href='settings.html'">Settings</button>
+    </footer>
+    <script src="rosen_script.js"></script>
+</body>
+</html>

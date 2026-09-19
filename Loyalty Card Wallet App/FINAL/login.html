@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Log in</h1>
+    </header>
+    <main>
+        <section>
+            <p>
+                Please enter your account details.
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <h6>Username</h6>
+                        <input 
+                            type="text" 
+                            id="username"
+                            placeholder="Enter username"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h6>Password</h6>
+                        <input 
+                            type="password" 
+                            id="password"
+                            placeholder="Enter password"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="signIn()">
+                            Log In
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                Create account if you don’t have one.
+            </p>
+            <button type="button" onclick="goToSignUp()">
+                Sign Up
+            </button>
+            <button type="button" onclick="goHome()">
+                Home
+            </button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Kartio</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
